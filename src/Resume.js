@@ -1,9 +1,16 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
+import useValueAnimation from './useValueAnimation';
 import useScrollAnimation from './useScrollAnimation';
 
 function Resume() {
   const sectionRef = useScrollAnimation();
+  const htmlCssBootstrap = useValueAnimation(sectionRef, 97, 2000);
+  const python = useValueAnimation(sectionRef, 85, 2000);
+  const sql = useValueAnimation(sectionRef, 80, 2000);
+  const tableau = useValueAnimation(sectionRef, 90, 2000);
+  const english = useValueAnimation(sectionRef, 80, 2000);
+  const tamil = useValueAnimation(sectionRef, 45, 2000);
 
   return (
     <section className="section fade-in-section" id="resume" ref={sectionRef}>
@@ -63,19 +70,19 @@ function Resume() {
               <div className="card-body pb-2">
                 <h6>HTML,CSS &amp; Bootstrap</h6>
                 <div className="progress mb-3">
-                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: '97%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${htmlCssBootstrap}%` }} aria-valuenow={htmlCssBootstrap} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h6>Python</h6>
                 <div className="progress mb-3">
-                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: '85%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${python}%` }} aria-valuenow={python} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h6>SQL</h6>
                 <div className="progress mb-3">
-                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: '80%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${sql}%` }} aria-valuenow={sql} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h6>Tableau</h6>
                 <div className="progress mb-3">
-                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: '90%' }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${tableau}%` }} aria-valuenow={tableau} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -89,11 +96,11 @@ function Resume() {
               <div className="card-body pb-2">
                 <h6>English</h6>
                 <div className="progress mb-3">
-                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: '80%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${english}%` }} aria-valuenow={english} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h6>Tamil</h6>
                 <div className="progress mb-3">
-                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: '45%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${tamil}%` }} aria-valuenow={tamil} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>

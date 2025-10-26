@@ -5,7 +5,6 @@ import About from './About';
 import Resume from './Resume';
 import Stats from './Stats';
 import HireMe from './HireMe';
-import Portfolio from './Portfolio';
 import Blog from './Blog';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -20,7 +19,6 @@ function App() {
       <Resume />
       <Stats />
       <HireMe />
-      <Portfolio />
       <Blog />
       <Contact />
       <Footer />
