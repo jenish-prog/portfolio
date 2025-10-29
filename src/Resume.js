@@ -26,17 +26,14 @@ function Resume() {
                 </div>
               </div>
               <div className="card-body">
-                <h6 className="title text-danger">NULL</h6>
+                <p>Web Developer</p>
+                <p className="subtitle">Build modern and responsive web applications, collaborate on GitHub, and gain hands-on experience by joining internships and contributing to real-world projects.</p>
+                <hr />
+                <p>AI/ML Engineer</p>
+                <p className="subtitle">Apply advanced machine learning and AI techniques to solve complex problems, analyze datasets, participate in Kaggle competitions, and create innovative solutions for industry challenges.</p>
+                <hr />
                 <p>Data Analyst</p>
-                <p className="subtitle">Build projects, join internships, compete in Kaggle, get certifications, contribute to GitHub, analyze public datasets, and create dashboards for experience.</p>
-                <hr />
-                <h6 className="title text-danger">NULL</h6>
-                <p>Front-end Developer</p>
-                <p className="subtitle">Build projects, join internships, compete in Kaggle, get certifications, contribute to GitHub, analyze public datasets, and create dashboards for experience.</p>
-                <hr />
-                <h6 className="title text-danger">NULL</h6>
-                <p>Data Scientist</p>
-                <p className="subtitle">Build projects, join internships, compete in Kaggle, get certifications, contribute to GitHub, analyze public datasets, and create dashboards for experience.</p>
+                <p className="subtitle">Transform raw data into actionable insights, visualize information using dashboards, and support data-driven decision-making through analytic projects and certifications.</p>
               </div>
             </div>
           </div>
@@ -68,7 +65,7 @@ function Resume() {
                 </div>
               </div>
               <div className="card-body pb-2">
-                <h6>HTML,CSS &amp; Bootstrap</h6>
+                <h6>React & JavaScript</h6>
                 <div className="progress mb-3">
                   <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${htmlCssBootstrap}%` }} aria-valuenow={htmlCssBootstrap} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -80,9 +77,13 @@ function Resume() {
                 <div className="progress mb-3">
                   <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${sql}%` }} aria-valuenow={sql} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h6>Tableau</h6>
+                <h6>Machine Learning & Deep Learning</h6>
                 <div className="progress mb-3">
                   <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${tableau}%` }} aria-valuenow={tableau} aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>SQL</h6>
+                <div className="progress mb-3">
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${sql}%` }} aria-valuenow={sql} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -93,8 +94,12 @@ function Resume() {
                   <span className="line"></span>
                 </div>
               </div>
-              <div className="card-body pb-2">
+              <div className="card-body pb-3">
                 <h6>English</h6>
+                <div className="progress mb-3">
+                  <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${english}%` }} aria-valuenow={english} aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>Spainsh</h6>
                 <div className="progress mb-3">
                   <div className="progress-bar bg-danger" role="progressbar" style={{ width: `${english}%` }} aria-valuenow={english} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>

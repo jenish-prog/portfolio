@@ -11,8 +11,8 @@ function About() {
         <div className="col-lg-4 about-card">
           <h3 className="font-weight-light">Who am I ?</h3>
           <span className="line mb-5"></span>
-          <h5 className="mb-3">A Data Analyst | Data Scientist Located In Our Lovely Earth</h5>
-          <p className="mt-20">I'm a Data Analyst and Data Scientist, skilled in extracting insights from data, building models, and making data-driven decisions.</p>
+          <h5 className="mb-3">A Web Developer | AI/ML Located In Our Lovely Earth</h5>
+          <p className="mt-20">A Web Developer and AI/ML practitioner passionate about creating interactive applications, analyzing data, building predictive models, and turning insights into impactful solutions.</p>
           <button className="btn btn-outline-danger"><i className="icon-down-circled2 "></i>Download My CV</button>
         </div>
         <div className="col-lg-4 about-card">
@@ -37,24 +37,24 @@ function About() {
           <div className="row">
             <div className="col-1 text-danger pt-1"><i className="ti-widget icon-lg"></i></div>
             <div className="col-10 ml-auto mr-3">
-              <h6>Data Analyst</h6>
-              <p className="subtitle"> Data-driven insights and decision-making.</p>
+              <h6>Web Development</h6>
+              <p className="subtitle"> Building modern, responsive, and user-friendly web applications.</p>
               <hr />
             </div>
           </div>
           <div className="row">
             <div className="col-1 text-danger pt-1"><i className="ti-paint-bucket icon-lg"></i></div>
             <div className="col-10 ml-auto mr-3">
-              <h6>Frontend Development</h6>
-              <p className="subtitle">Interactive, responsive, and user-friendly design.</p>
+              <h6>AI & Machine Learningt</h6>
+              <p className="subtitle">Developing intelligent systems, applying advanced models, and extracting actionable insights from data.</p>
               <hr />
             </div>
           </div>
           <div className="row">
             <div className="col-1 text-danger pt-1"><i className="ti-stats-up icon-lg"></i></div>
             <div className="col-10 ml-auto mr-3">
-              <h6>Data Scientist</h6>
-              <p className="subtitle">Extracting insights, building predictive models.</p>
+              <h6>Data Analytics</h6>
+              <p className="subtitle">Leveraging data analysis techniques to inform decision-making and optimize solutions.</p>
               <hr />
             </div>
           </div>
