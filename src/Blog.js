@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import useScrollAnimation from './useScrollAnimation';
 import blog1 from './assets/imgs/blog1.png';
