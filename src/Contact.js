@@ -55,10 +55,10 @@ function Contact() {
                 </div>
               </div>
               <ul className="social-icons pt-4">
-                <li className="social-item"><a className="social-link text-dark" href="https://www.instagram.com/jen_is_h_/"><i className="ti-instagram" aria-hidden="true"></i></a></li>
-                <li className="social-item"><a className="social-link text-dark" href="https://www.linkedin.com/in/jenish-s-4aa3692b5/"><i className="ti-linkedin" aria-hidden="true"></i></a></li>
-                <li className="social-item"><a className="social-link text-dark" href="https://github.com/jenish-prog"><i className="ti-github" aria-hidden="true"></i></a></li>
-                <li className="social-item"><a className="social-link text-dark" href="https://www.youtube.com/@WhatHappen_jp"><i className="ti-youtube" aria-hidden="true"></i></a></li>
+                <li className="social-item"><a className="social-link text-dark" href="https://www.instagram.com/jen_is_h_/" aria-label="Instagram"><i className="ti-instagram" aria-hidden="true"></i></a></li>
+                <li className="social-item"><a className="social-link text-dark" href="https://www.linkedin.com/in/jenish-s-4aa3692b5/" aria-label="LinkedIn"><i className="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li className="social-item"><a className="social-link text-dark" href="https://github.com/jenish-prog" aria-label="GitHub"><i className="ti-github" aria-hidden="true"></i></a></li>
+                <li className="social-item"><a className="social-link text-dark" href="https://www.youtube.com/@WhatHappen_jp" aria-label="YouTube"><i className="ti-youtube" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>

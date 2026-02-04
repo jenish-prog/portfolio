@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 function useValueAnimation(ref, end, duration) {
   const [value, setValue] = useState(0);
@@ -6,16 +6,17 @@ function useValueAnimation(ref, end, duration) {
   const animationFrameId = useRef(null);
   const startTimeRef = useRef(null);
 
-  const animate = (timestamp) => {
+  const animate = useCallback((timestamp) => {
     if (!startTimeRef.current) startTimeRef.current = timestamp;
     const progress = Math.min((timestamp - startTimeRef.current) / duration, 1);
     setValue(Math.floor(progress * end));
     if (progress < 1) {
       animationFrameId.current = requestAnimationFrame(animate);
     }
-  };
+  }, [end, duration]);
 
   useEffect(() => {
+    const element = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -28,13 +29,13 @@ function useValueAnimation(ref, end, duration) {
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, [ref]);
@@ -44,7 +45,7 @@ function useValueAnimation(ref, end, duration) {
       animationFrameId.current = requestAnimationFrame(animate);
     }
     return () => cancelAnimationFrame(animationFrameId.current);
-  }, [isVisible, end, duration]);
+  }, [isVisible, animate]);
 
   return value;
 }
