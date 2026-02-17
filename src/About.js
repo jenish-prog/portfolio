@@ -13,7 +13,7 @@ function About() {
           <span className="line mb-5"></span>
           <h5 className="mb-3">A Web Developer | AI/ML Located In Our Lovely Earth</h5>
           <p className="mt-20">A Web Developer and AI/ML practitioner passionate about creating interactive applications, analyzing data, building predictive models, and turning insights into impactful solutions.</p>
-          <button className="btn btn-outline-danger"><i className="icon-down-circled2 "></i>Download My CV</button>
+          <a href="/jenish_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger"><i className="icon-down-circled2 "></i>Download My CV</a>
         </div>
         <div className="col-lg-4 about-card">
           <h3 className="font-weight-light">Personal Info</h3>
@@ -25,10 +25,10 @@ function About() {
             <li><span>Address</span> :  Kariyavilai,mondaikadu(post)</li>
           </ul>
           <ul className="social-icons pt-3">
-            <li className="social-item"><a className="social-link" href="#"><i className="ti-linkedin" aria-hidden="true"></i></a></li>
-            <li className="social-item"><a className="social-link" href="#"><i className="ti-youtube" aria-hidden="true"></i></a></li>
-            <li className="social-item"><a className="social-link" href="#"><i className="ti-instagram" aria-hidden="true"></i></a></li>
-            <li className="social-item"><a className="social-link" href="#"><i className="ti-github" aria-hidden="true"></i></a></li>
+            <li className="social-item"><a className="social-link" href="https://www.linkedin.com/in/jenish-s-4aa3692b5/" target="_blank" rel="noopener noreferrer"><i className="ti-linkedin" aria-hidden="true"></i></a></li>
+            <li className="social-item"><a className="social-link" href="https://www.youtube.com/@WhatHappen_jp" target="_blank" rel="noopener noreferrer"><i className="ti-youtube" aria-hidden="true"></i></a></li>
+            <li className="social-item"><a className="social-link" href="https://www.instagram.com/jen_is_h_/" target="_blank" rel="noopener noreferrer"><i className="ti-instagram" aria-hidden="true"></i></a></li>
+            <li className="social-item"><a className="social-link" href="https://github.com/jenish-prog" target="_blank" rel="noopener noreferrer"><i className="ti-github" aria-hidden="true"></i></a></li>
           </ul>
         </div>
         <div className="col-lg-4 about-card">

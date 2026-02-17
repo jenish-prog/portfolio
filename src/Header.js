@@ -15,7 +15,7 @@ function Header() {
           <h4 className="header-subtitle">Hello, I am</h4>
           <h1 className="header-title">Jenish</h1>
           <h6 className="header-mono">Web Developer | AI/ML</h6>
-          <button className="btn btn-primary btn-rounded"><i className="ti-printer pr-2"></i>Print Resume</button>
+          <a href="/jenish_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-rounded"><i className="ti-printer pr-2"></i>Print Resume</a>
         </div>
       </div>
     </header>
